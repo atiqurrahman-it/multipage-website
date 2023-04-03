@@ -1,0 +1,16 @@
+.Banner {
+  display: flex;
+  max-width: 910px;
+  margin: 50px auto;
+  justify-content: flex-start;
+}
+
+
+
+@media (max-width: 576px) {
+  .Banner {
+    text-align: center;
+    flex-direction: column;
+    margin: 40px 20px;
+  }
+}

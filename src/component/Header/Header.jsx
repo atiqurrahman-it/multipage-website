@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 import Nav from "./Nav";
 const Header = () => {
-  const [click, setClick] = useState(true);
+  const [click, setClick] = useState(false);
   return (
     // react router provide NavLink tag
     <header className="header">
@@ -13,14 +13,14 @@ const Header = () => {
       <NavLink to="/">
         <a>MultiPage </a>
         <div onClick={() => setClick(!click)} className="ShowMenu">
-          {click ? (
+          {click===true ? (
             <FontAwesomeIcon icon={faXmark} />
           ) : (
             <FontAwesomeIcon icon={faBars} />
           )}
         </div>
       </NavLink>
-      {click ? <Nav /> : ""}
+      <Nav open={click} /> 
     </header>
   );
 };

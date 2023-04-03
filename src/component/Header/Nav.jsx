@@ -1,9 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-const Nav = () => {
+const Nav = (props) => {
+  console.log(props.open)
   return (
     <nav>
-      <ul>
+      <ul className={ `${props.open ? 'ulTop': 'ultop'}`} >
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
