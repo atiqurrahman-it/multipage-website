@@ -30,6 +30,14 @@ const Footer = () => {
           <p>+8801518474541</p>
         </div>
       </div>
+      <hr/>
+      <div className="footer-sub-info">
+        <div> <p>@ {new Date().getFullYear() } MultiTech.All Right Received </p></div>
+        <div>
+          <p>privacy policy</p>
+          <p>terms and conditions</p>
+        </div>
+      </div>
     </div>
   );
 };

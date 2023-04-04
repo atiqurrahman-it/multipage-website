@@ -30,7 +30,7 @@
   max-width: 800px;
   color: rgb(182, 176, 176);
   margin: 0px auto;
-  padding: 100px 10px;
+  padding: 100px 10px 50px 10px;
 }
 
 .footer-info h5 {
@@ -45,12 +45,24 @@
   margin: 10px 0px;
 }
 
+.footer-sub-info {
+  color: rgb(182, 176, 176);
+  max-width: 800px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+
 @media (max-width: 576px) {
   .footer-info {
     text-align: center;
     grid-template-columns: 1fr;
   }
-  .Footer_top {
+  .Footer_top,
+  .footer-sub-info {
+    text-align: center;
     flex-direction: column;
   }
 }
