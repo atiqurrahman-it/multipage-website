@@ -4,8 +4,9 @@
   margin: 50px auto;
   justify-content: flex-start;
 }
-
-
+.banner-img {
+  margin-top: 20px;
+}
 
 @media (max-width: 576px) {
   .Banner {

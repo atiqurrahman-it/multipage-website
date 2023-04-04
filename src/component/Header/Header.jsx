@@ -11,7 +11,7 @@ const Header = () => {
     <header className="header">
       {/* logo te click korte hompage e jabe  */}
       <NavLink to="/">
-        <a>MultiPage </a>
+        <a>MultiTech </a>
         <div onClick={() => setClick(!click)} className="ShowMenu">
           {click===true ? (
             <FontAwesomeIcon icon={faXmark} />

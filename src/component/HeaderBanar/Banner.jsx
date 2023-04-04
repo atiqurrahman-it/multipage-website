@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 
 import './Banner.css'
-const Banar = (props) => {
+const Banner = (props) => {
     const {name,img,description}=props
   return (
     <div className="Banner">
@@ -16,11 +16,11 @@ const Banar = (props) => {
         </p>
         <Button> <Link to='/contact'> Hire Me </Link></Button>
       </div>
-      <div>
+      <div className="banner-img">
         <img src={img} />
       </div>
     </div>
   );
 };
 
-export default Banar;
+export default Banner;
