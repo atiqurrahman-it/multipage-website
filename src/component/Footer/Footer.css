@@ -18,9 +18,21 @@
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.callMe p {
+  line-height: 30px;
+}
 .Footer_top:hover {
-  border: 1px solid black;
+  animation-name: border-rotation;
+  animation-duration: 4s;
+}
+
+@keyframes border-rotation {
+  from {
+    border: 3px solid yellow;
+  }
+  to {
+    background-color: yellow;
+  }
 }
 
 .footer-info {

@@ -7,6 +7,22 @@
 .banner-img {
   margin-top: 20px;
 }
+.Banner-info h5{
+  color: rgb(182, 172, 172);
+  letter-spacing: 0.1rem;
+  margin: 5px 0px;
+}
+.Banner-info h1{
+  color: black;
+  font-weight: 800;
+  font-size: 34px;
+  margin: 7px 0px;
+}
+
+.Banner-info p{
+  color:rgb(145, 147, 149);
+  margin-bottom: 10px;
+}
 
 @media (max-width: 576px) {
   .Banner {

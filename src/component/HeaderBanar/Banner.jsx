@@ -8,7 +8,7 @@ const Banner = (props) => {
     const {name,img,description}=props
   return (
     <div className="Banner">
-      <div >
+      <div className="Banner-info">
         <h5>This Is Me </h5>
         <h1>{name}</h1>
         <p>

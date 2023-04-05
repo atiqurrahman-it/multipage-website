@@ -1,5 +1,6 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faPhone,faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import React from "react";
 import Button from "../Button/Button";
 import "./Footer.css";
@@ -22,17 +23,19 @@ const Footer = () => {
         </div>
         <div>
           <h5>Follow Us </h5>
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faEnvelope} />
         </div>
-        <div>
+        <div className="callMe">
           <h5>Call Us</h5>
-          <p>+8801791835039</p>
-          <p>+8801518474541</p>
+          <p><span> <FontAwesomeIcon icon={faPhone} /></span> +8801791835039</p>
+          <p><span> <FontAwesomeIcon icon={faPhone} /></span> +8801518474541</p>
         </div>
       </div>
-      <hr/>
+      <hr />
       <div className="footer-sub-info">
-        <div> <p>@ {new Date().getFullYear() } MultiTech.All Right Received </p></div>
+        <div>
+          <p>@ {new Date().getFullYear()} MultiTech.All Right Received </p>
+        </div>
         <div>
           <p>privacy policy</p>
           <p>terms and conditions</p>
